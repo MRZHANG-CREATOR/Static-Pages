@@ -1,0 +1,167 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width:1280px) {
+    .contain {
+        width: 1280px;
+    }
+}
+.container{
+    background-color: #fff;
+}
+header {
+    padding-left: 0!important;
+}
+
+.logo {
+    background-color: #429ad9;
+}
+.logo span{
+    display:  block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.logo img {
+    display: block;
+    /* width: 100%; */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 注意权重问题 */
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.nav a:hover {
+    background-color: #bbb;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+@media screen and (max-width:991px){
+    .nav li{
+        float: left;
+        width: 20%;
+    }
+    article{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:767px){
+    .nav  li a{
+font-size: 14px;
+}
+.news li:nth-child(1) {
+width: 100%!important;
+
+}
+.news li{
+    width: 50%!important;
+}
+}
+
+.news ul li {
+    float: left;
+    width: 25%;
+    height: 128px;
+        padding-right: 10px;
+
+}
+
+.news ul li:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+.news ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+}
+
+.news ul li a img {
+    width: 100%;
+    height: 100%;
+}
+
+.news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+    overflow: hidden;
+}
+
+.news li:nth-child(1) a p {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 41px;
+    left: 0;
+    bottom: 0;
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    background-color: #555;
+}
+.publish{
+    border-bottom: 1px solid #cccccc;
+}
+.publish row {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+}
+.pic{
+    margin: 20px auto;
+    
+}
+.pic img{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+
+}
+.hot{
+    display: block;
+      margin-top: 20px;
+      padding: 0 20px 20px;
+      border: 1px solid #ccc;
+}
+.hot span {
+    border-radius: 0;
+}
