@@ -1,6 +1,7 @@
 # Static-Pages
 Write some static pages to cement the foundation🥇🥈🥉
 
+<<<<<<< HEAD
 This staticPage include flex，rem，stream and 
 
 
