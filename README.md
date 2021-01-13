@@ -8,7 +8,7 @@ This staticPage include flex，rem，stream and
 
 ### bootstrap
 
-![bootstrap](G:\Application\Project\Static-Pages\poster\bootstrap.png)
+![bootstrap](https://github.com/MRZHANG-CREATOR/Static-Pages/tree/main/poster/bootstrap.png)
 
 
 
