@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <video
+      style="height: auto; display: none;width:100px;height: 200px;"
+      src=""
+      id="video0"
+    ></video>
+    <input
+      class="form-control"
+      type="file"
+      style="height: auto"
+      id="video"
+      name="video"
+    />
+  </body>
+  <script>
+    $("#video").change(function () {
+      var objUrl = getObjectURL(this.files[0]);
+      console.log("objUrl = " + objUrl);
+      if (objUrl) {
+        $("#video0").attr("src", objUrl);
+        $("#video0").show();
+      }
+    });
+    //建立一个可存取到该file的url
+    function getObjectURL(file) {
+      var url = null;
+      if (window.createObjectURL != undefined) {
+        // basic
+        url = window.createObjectURL(file);
+      } else if (window.URL != undefined) {
+        // mozilla(firefox)
+        url = window.URL.createObjectURL(file);
+      } else if (window.webkitURL != undefined) {
+        // webkit or chrome
+        url = window.webkitURL.createObjectURL(file);
+      }
+      return url;
+    }
+  </script>
+</html>
